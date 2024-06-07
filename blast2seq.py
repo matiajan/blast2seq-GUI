@@ -66,8 +66,8 @@ query_label.pack()
 query_textbox = tk.Text(app, wrap=tk.WORD, width=50, height=10)
 query_textbox.pack()
 
-query_paste_button = tk.Button(app, text="Paste Query", command=lambda: query_textbox.insert("end", app.clipboard_get()))
-query_paste_button.pack()
+#query_paste_button = tk.Button(app, text="Paste Query", command=lambda: query_textbox.insert("end", app.clipboard_get()))
+#query_paste_button.pack()
 
 query_file_path = tk.StringVar()
 query_file_entry = tk.Entry(app, textvariable=query_file_path, width=50)
@@ -83,8 +83,8 @@ subject_label.pack()
 subject_textbox = tk.Text(app, wrap=tk.WORD, width=50, height=10)
 subject_textbox.pack()
 
-subject_paste_button = tk.Button(app, text="Paste Subject", command=lambda: subject_textbox.insert("end", app.clipboard_get()))
-subject_paste_button.pack()
+#subject_paste_button = tk.Button(app, text="Paste Subject", command=lambda: subject_textbox.insert("end", app.clipboard_get()))
+#subject_paste_button.pack()
 
 subject_file_path = tk.StringVar()
 subject_file_entry = tk.Entry(app, textvariable=subject_file_path, width=50)
