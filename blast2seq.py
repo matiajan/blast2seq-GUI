@@ -63,14 +63,14 @@ app.title("BLASTN GUI")
 query_label = tk.Label(app, text="Query Sequence:")
 query_label.pack()
 
-query_textbox = tk.Text(app, wrap=tk.WORD, width=50, height=10)
+query_textbox = tk.Text(app, wrap=tk.WORD, width=100, height=10)
 query_textbox.pack()
 
 #query_paste_button = tk.Button(app, text="Paste Query", command=lambda: query_textbox.insert("end", app.clipboard_get()))
 #query_paste_button.pack()
 
 query_file_path = tk.StringVar()
-query_file_entry = tk.Entry(app, textvariable=query_file_path, width=50)
+query_file_entry = tk.Entry(app, textvariable=query_file_path, width=100)
 query_file_entry.pack()
 
 query_browse_button = tk.Button(app, text="Browse Query File", command=lambda: browse_file(query_file_entry))
@@ -80,14 +80,14 @@ query_browse_button.pack()
 subject_label = tk.Label(app, text="Subject Sequence:")
 subject_label.pack()
 
-subject_textbox = tk.Text(app, wrap=tk.WORD, width=50, height=10)
+subject_textbox = tk.Text(app, wrap=tk.WORD, width=100, height=10)
 subject_textbox.pack()
 
 #subject_paste_button = tk.Button(app, text="Paste Subject", command=lambda: subject_textbox.insert("end", app.clipboard_get()))
 #subject_paste_button.pack()
 
 subject_file_path = tk.StringVar()
-subject_file_entry = tk.Entry(app, textvariable=subject_file_path, width=50)
+subject_file_entry = tk.Entry(app, textvariable=subject_file_path, width=100)
 subject_file_entry.pack()
 
 subject_browse_button = tk.Button(app, text="Browse Subject File", command=lambda: browse_file(subject_file_entry))
