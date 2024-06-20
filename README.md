@@ -1,4 +1,4 @@
-Are you tired of the tedious process of uploading sequences one by one when using BLAST's web interface for sequence comparison? While a local installation of the BLAST program can compare two sequences, it lacks the convenience of a web interface. Here is a simple GUI to use BLAST locally with ease. To get started, you'll need to install NCBI-BLAST+, Python, and Tkinter.
+Are you tired of the tedious process of uploading sequences one by one when using BLAST's web interface for comparison of two sequences? While a local installation of the BLAST program can compare two sequences, it lacks the convenience of a web interface. Here is a simple GUI to use BLAST2SEQ locally with ease. To get started, you'll need to install NCBI-BLAST+, Python, and Tkinter.
 
 1. Install BLAST locally:
 
