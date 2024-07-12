@@ -27,3 +27,5 @@ or
 ./bl2seq
 
 Alternatively, you can use bl2seq to create an application launcher on your desktop.
+
+![blast2seq GUI](https://)
