@@ -1,4 +1,4 @@
 #!/bin/bash
-#graficke rozhrani pro blast2seq
+#spusti graficke rozhrani blast2seq
 python3 /usr/local/bin/blast2seq.py
 exit 0
