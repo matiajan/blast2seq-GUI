@@ -28,4 +28,6 @@ or
 
 Alternatively, you can use bl2seq to create an application launcher on your desktop.
 
+You can copy and paste from the results window.
+
 ![blast2seq GUI](https://github.com/matiajan/blast2seq-frontend/blob/main/blast2seq.png)
