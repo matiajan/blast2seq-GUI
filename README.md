@@ -1,23 +1,29 @@
-Are you tired of the tedious process of uploading sequences one by one when using BLAST's web interface for comparison of two sequences? While a local installation of the BLAST program can compare two sequences, it lacks the convenience of a web interface. Here is a simple GUI to use BLAST2SEQ locally with ease. To get started, you'll need to install NCBI-BLAST+, Python, and Tkinter.
+Are you tired of tedious sequence uploads when comparing two sequences using Blast's web interface? A local installation of the Blast program can also compare two sequences, but it lacks the practicality of a web interface. Here is a simple GUI to use blastn locally. Installation of ncbi-blast+, Python, and Tkinter is required for functionality.
 
-1. Install BLAST locally:
+1. install blast locally
 
-For Ubuntu and Debian users:
+for Ubuntu and Debian users
 
 sudo apt install ncbi-blast+
 
-2. Install Python and Tkinter:
+2. install python and tkinter
 
 sudo apt install python3-tk
 
-3. Place the bl2seq and blast2seq.py files in a folder within your $HOME directory.
+3. put bl2seq and blast2seq.py in a folder in your $HOME directory
 
-To ensure the bl2seq script will work correctly when pasting query and subject sequences, it must be run from a folder where you have write permissions.
+To ensure proper pasting of query and subject sequences, the bl2seq script must be run from a folder to which you have write permission.
 
-4. Edit line 3 of the bl2seq script to specify the correct path to blast2seq.py (e.g., /home/$HOME/bl2seq/) and make the script executable:
+4. edit line 3 of bl2seq script to locate blast2seq.py in your correct path (for example /home/$HOME/bl2seq/ or /usr/local/bin/) and make the script executable
 
 chmod +x bl2seq
 
-5. Run the script:
+5. run by typing in the console
+
+python3 blast2seq.py
+
+or
 
 ./bl2seq
+
+Alternatively, you can use bl2seq to create an application launcher on your desktop.
