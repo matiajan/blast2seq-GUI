@@ -1,6 +1,4 @@
 #!/bin/bash
 #graficke rozhrani pro blast2seq
 python3 /usr/local/bin/blast2seq.py
-rm temp_subject.fasta
-rm temp_query.fasta
 exit 0
