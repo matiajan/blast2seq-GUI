@@ -1,4 +1,4 @@
-#GUI for blast2sequences; created by ChatGPT 20230914 and 20240709
+# GUI for blast2sequences; created by ChatGPT 20230914, 20240709 and 20240801
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import subprocess
@@ -25,8 +25,8 @@ def run_blastn():
 
     command = ["blastn", "-query", query_file, "-subject", subject_file, "-sorthits", "4"]
 
-    if task_var.get():
-        command.extend(["-task", "blastn-short"])
+    if task_var.get() != "blastn":
+        command.extend(["-task", task_var.get()])
 
     try:
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
@@ -78,10 +78,14 @@ subject_file_entry.pack(padx=5, pady=5)
 subject_browse_button = tk.Button(app, text="Or Browse Subject File", command=lambda: browse_file(subject_file_entry))
 subject_browse_button.pack(padx=5, pady=5)
 
-# Checkbox for the -task option
-task_var = tk.BooleanVar()
-task_checkbox = tk.Checkbutton(app, text="Use blastn-short task", variable=task_var)
-task_checkbox.pack(padx=5, pady=5)
+# Dropdown menu for the -task option
+task_label = tk.Label(app, text="Select BLASTN Task:")
+task_label.pack(padx=5, pady=5)
+
+task_options = ["blastn", "blastn-short", "dc-megablast", "megablast", "rmblastn"]
+task_var = tk.StringVar(value=task_options[0])  # Default to "blastn"
+task_menu = tk.OptionMenu(app, task_var, *task_options)
+task_menu.pack(padx=5, pady=5)
 
 # Run button and result display
 run_button = tk.Button(app, text="Run BLASTN", command=run_blastn)
